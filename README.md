@@ -4,7 +4,7 @@ This project optimizes the **artificial neural network (ANN)** parameters using 
 ## Part 1
 This project is an extension to a previous project which is documented in a tutorial titled **Artificial Neural Network Implementation using NumPy and Classification of the Fruits360 Image Dataset** which is available at my **LinkedIn profile** here: https://www.linkedin.com/pulse/artificial-neural-network-implementation-using-numpy-fruits360-gad. It starts by extracting the image features from 4 selected classes of the Fruits360 dataset which are Apple Braeburn,	Lemon Meyer, Mango,	and Raspberry. The feature vector consisted of 360 bin histogram of the Hue channel. 
 
-The feature vector is reduced by filtering it using the standard deviation to return a new vector of length 102. The reduced feature vector is used for training the ANN that is implemented from scratch using NumPy. The implementation of the first part of the tutorial is available at this link at my **GitHub page**: https://github.com/ahmedfgad/NumPyANN  
+The feature vector is reduced by filtering it using the standard deviation to return a new vector of length 102. The reduced feature vector is used for training the ANN that is implemented from scratch using NumPy. The implementation of the first tutorial is available at this link at my **GitHub page**: https://github.com/ahmedfgad/NumPyANN  
 
 In the previous project, the ANN was not completely created as just the forward pass was made ready but there is no backward pass for updating the network weights. This is why the accuracy is very low and not exceeds 45%. The solution to this problem is using an optimization technique for updating the network weights. This project uses the genetic algorithm (GA) for optimizing the network weights.
 
