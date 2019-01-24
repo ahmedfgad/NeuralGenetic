@@ -13,6 +13,21 @@ The second part of the tutorial, which is implemented by this project, consists 
 
 The **Example_GA_ANN.py** file reads the features and the class labels files, filters the features based on the standard deviation, creates the ANN architecture, generates the initial solutions, loops through a number of generations by calculating the fitness values for all solutions, selecting best parents, applying crossover and mutation, and finally creating the new population.
 
+Before going further in this project, I recommend reading about the GA and its implementation in Python from scratch. You can find details it **my book** cited above. Also you can read my previous tutorials found at these links:
+* **Introduction to Optimization with Genetic Algorithm**  
+https://www.linkedin.com/pulse/introduction-optimization-genetic-algorithm-ahmed-gad  
+https://www.kdnuggets.com/2018/03/introduction-optimization-with-genetic-algorithm.html  
+https://towardsdatascience.com/introduction-to-optimization-with-genetic-algorithm-2f5001d9964b  
+
+* **Genetic Algorithm (GA) Optimization - Step-by-Step Example**  
+https://www.slideshare.net/AhmedGadFCIT/genetic-algorithm-ga-optimization-stepbystep-example
+
+* **Genetic Algorithm Implementation in Python**  
+https://www.linkedin.com/pulse/genetic-algorithm-implementation-python-ahmed-gad  
+https://www.kdnuggets.com/2018/07/genetic-algorithm-implementation-python.html  
+https://towardsdatascience.com/genetic-algorithm-implementation-in-python-5ab67bb124a6  
+https://github.com/ahmedfgad/GeneticAlgorithmPython  
+
 For Contacting the Author
 * E-mail: ahmed.f.gad@gmail.com
 * LinkedIn: https://linkedin.com/in/ahmedfgad/
