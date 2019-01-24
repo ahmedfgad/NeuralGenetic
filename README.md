@@ -2,20 +2,20 @@
 This project optimizes the **artificial neural network (ANN)** parameters using the **genetic algorithm (GA)** for the classification of the Fruits360 dataset. The implementation is from scratch using **NumPy**.  
 
 ## Part 1
-This project is the second part of a tutorial that was started with its first part that is documented in a tutorial titled **Artificial Neural Network Implementation using NumPy and Classification of the Fruits360 Image Dataset** which is available at my **LinkedIn profile** here: https://www.linkedin.com/pulse/artificial-neural-network-implementation-using-numpy-fruits360-gad. It starts by extracting the image features from 4 selected classes of the Fruits360 dataset which are Apple Braeburn,	Lemon Meyer, Mango,	and Raspberry. The feature vector consisted of 360 bin histogram of the Hue channel. 
+This project is an extension to a previous project which is documented in a tutorial titled **Artificial Neural Network Implementation using NumPy and Classification of the Fruits360 Image Dataset** which is available at my **LinkedIn profile** here: https://www.linkedin.com/pulse/artificial-neural-network-implementation-using-numpy-fruits360-gad. It starts by extracting the image features from 4 selected classes of the Fruits360 dataset which are Apple Braeburn,	Lemon Meyer, Mango,	and Raspberry. The feature vector consisted of 360 bin histogram of the Hue channel. 
 
 The feature vector is reduced by filtering it using the standard deviation to return a new vector of length 102. The reduced feature vector is used for training the ANN that is implemented from scratch using NumPy. The implementation of the first part of the tutorial is available at this link at my **GitHub page**: https://github.com/ahmedfgad/NumPyANN  
 
-In the first part, the ANN was not completely created as just the forward pass was made ready but there is no backward pass for updating the network weights. This is why the accuracy is very low and not exceeds 45%. The solution to this problem is using an optimization technique for updating the network weights. The second part of the tutorial uses the genetic algorithm (GA) for optimizing the network weights.
+In the previous project, the ANN was not completely created as just the forward pass was made ready but there is no backward pass for updating the network weights. This is why the accuracy is very low and not exceeds 45%. The solution to this problem is using an optimization technique for updating the network weights. This project uses the genetic algorithm (GA) for optimizing the network weights.
 
 It is worth-mentioning that both the previous and this tutorial are based on my 2018 book cited as **Ahmed Fawzy Gad 'Practical Computer Vision Applications Using Deep Learning with CNNs'. Dec. 2018, Apress, 978-1-4842-4167-7**. The book is available at Springer at this link: **https://springer.com/us/book/9781484241660**. You can find all details within this book.  
 
 ## Part 2
-The second part of the tutorial, which is implemented by this project, consists of 3 main Python files which are **ANN.py**, **GA.py**, and **Example_GA_ANN.py** which is the main file from which the other files are imported and called. This file uses 2 supplementary files which are the previously extracted dataset features stored into a file named **dataset_features.pkl**. The second file is the class labels for all samples which are stored into a file named **outputs.pkl**.
+The extension to the previous tutorial, which is implemented by this project, consists of 3 main Python files which are **ANN.py**, **GA.py**, and **Example_GA_ANN.py** which is the main file from which the other files are imported and called. This file uses 2 supplementary files which are the previously extracted dataset features stored into a file named **dataset_features.pkl**. The second file is the class labels for all samples which are stored into a file named **outputs.pkl**.
 
 The **Example_GA_ANN.py** file reads the features and the class labels files, filters the features based on the standard deviation, creates the ANN architecture, generates the initial solutions, loops through a number of generations by calculating the fitness values for all solutions, selecting best parents, applying crossover and mutation, and finally creating the new population.
 
-The documentartion of the second part is available at my **LinkedIn profile** here: https://www.linkedin.com/pulse/artificial-neural-networks-optimization-using-genetic-ahmed-gad
+The documentartion of the second tutorial is available at my **LinkedIn profile** here: https://www.linkedin.com/pulse/artificial-neural-networks-optimization-using-genetic-ahmed-gad
 
 ## Read more about GA
 Before going further in this project, I recommend reading about the GA and its implementation in Python from scratch. You can find details it **my book** cited above. Also you can read my previous tutorials found at these links:
