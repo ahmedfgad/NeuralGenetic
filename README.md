@@ -28,7 +28,7 @@ https://www.kdnuggets.com/2018/07/genetic-algorithm-implementation-python.html
 https://towardsdatascience.com/genetic-algorithm-implementation-in-python-5ab67bb124a6  
 https://github.com/ahmedfgad/GeneticAlgorithmPython  
 
-For Contacting the Author
+## For contacting the author  
 * E-mail: ahmed.f.gad@gmail.com
 * LinkedIn: https://linkedin.com/in/ahmedfgad/
 * KDnuggets: https://kdnuggets.com/author/ahmed-gad
