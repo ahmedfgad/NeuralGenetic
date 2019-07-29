@@ -39,7 +39,7 @@ def select_mating_pool(pop, fitness, num_parents):
 def crossover(parents, offspring_size):
     offspring = numpy.empty(offspring_size)
     # The point at which crossover takes place between two parents. Usually, it is at the center.
-    crossover_point = numpy.uint8(offspring_size[1]/2)
+    crossover_point = numpy.uint32(offspring_size[1]/2)
 
     for k in range(offspring_size[0]):
         # Index of the first parent to mate.
@@ -53,7 +53,7 @@ def crossover(parents, offspring_size):
     return offspring
 
 def mutation(offspring_crossover, mutation_percent):
-    num_mutations = numpy.uint8((mutation_percent*offspring_crossover.shape[1])/100)
+    num_mutations = numpy.uint32((mutation_percent*offspring_crossover.shape[1])/100)
     mutation_indices = numpy.array(random.sample(range(0, offspring_crossover.shape[1]), num_mutations))
     # Mutation changes a single gene in each offspring randomly.
     for idx in range(offspring_crossover.shape[0]):
