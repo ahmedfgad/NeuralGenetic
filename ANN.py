@@ -13,7 +13,7 @@ def predict_outputs(weights_mat, data_inputs, data_outputs, activation="relu"):
     for sample_idx in range(data_inputs.shape[0]):
         r1 = data_inputs[sample_idx, :]
         for curr_weights in weights_mat:
-            r1 = numpy.matmul(a=r1, b=curr_weights)
+            r1 = numpy.matmul(r1, curr_weights)
             if activation == "relu":
                 r1 = relu(r1)
             elif activation == "sigmoid":
