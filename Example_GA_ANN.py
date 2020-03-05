@@ -24,7 +24,7 @@ Genetic algorithm parameters:
 
 sol_per_pop = 8
 num_parents_mating = 4
-num_generations = 1000
+num_generations = 20
 mutation_percent = 10
 
 #Creating the initial population.
