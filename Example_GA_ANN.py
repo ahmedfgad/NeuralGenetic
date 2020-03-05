@@ -99,6 +99,7 @@ matplotlib.pyplot.xlabel("Iteration", fontsize=20)
 matplotlib.pyplot.ylabel("Fitness", fontsize=20)
 matplotlib.pyplot.xticks(numpy.arange(0, num_generations+1, 100), fontsize=15)
 matplotlib.pyplot.yticks(numpy.arange(0, 101, 5), fontsize=15)
+matplotlib.pyplot.show()
 
 f = open("weights_"+str(num_generations)+"_iterations_"+str(mutation_percent)+"%_mutation.pkl", "wb")
 pickle.dump(pop_weights_mat, f)
