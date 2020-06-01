@@ -6,8 +6,8 @@ import pygad.gann
 def fitness_func(solution, sol_idx):
     global GANN_instance, data_inputs, data_outputs
 
-    predictions = pygad.nn.predict_outputs(last_layer=GANN_instance.population_networks[sol_idx],
-                                           data_inputs=data_inputs)
+    predictions = pygad.nn.predict(last_layer=GANN_instance.population_networks[sol_idx],
+                                   data_inputs=data_inputs)
     correct_predictions = numpy.where(predictions == data_outputs)[0].size
     solution_fitness = (correct_predictions/data_outputs.size)*100
 
@@ -54,7 +54,7 @@ GANN_instance = pygad.gann.GANN(num_solutions=num_solutions,
                                 num_neurons_hidden_layers=[2],
                                 num_neurons_output=num_classes,
                                 hidden_activations=["relu"],
-                                output_activation="sigmoid")
+                                output_activation="softmax")
 
 # population does not hold the numerical weights of the network instead it holds a list of references to each last layer of each network (i.e. solution) in the population. A solution or a network can be used interchangeably.
 # If there is a population with 3 solutions (i.e. networks), then the population is a list with 3 elements. Each element is a reference to the last layer of each network. Using such a reference, all details of the network can be accessed.
@@ -110,8 +110,8 @@ if ga_instance.best_solution_generation != -1:
     print("Best fitness value reached after {best_solution_generation} generations.".format(best_solution_generation=ga_instance.best_solution_generation))
 
 # Predicting the outputs of the data using the best solution.
-predictions = pygad.nn.predict_outputs(last_layer=GANN_instance.population_networks[solution_idx],
-                                 data_inputs=data_inputs)
+predictions = pygad.nn.predict(last_layer=GANN_instance.population_networks[solution_idx],
+                               data_inputs=data_inputs)
 print("Predictions of the trained network : {predictions}".format(predictions=predictions))
 
 # Calculating some statistics

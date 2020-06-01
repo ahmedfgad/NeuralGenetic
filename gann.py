@@ -47,8 +47,8 @@ def validate_network_parameters(num_neurons_input,
     length_mismatch = "Hidden activation functions: When passing the activation function(s) as a list or a tuple, its length must match the length of the 'num_neurons_hidden_layers' parameter but a mismatch is found:\n{mismatched_lengths}"
 
     # A list of the names of the supported activation functions.
-    supported_activations = ["sigmoid", "relu"]
-    
+    supported_activations = ["sigmoid", "relu", "softmax"]
+
     # Validating the output layer activation function.
     if not (type(output_activation) is str):
         raise ValueError(unexpected_output_activation_value.format(activation_type=type(output_activation)))
@@ -94,7 +94,7 @@ def validate_network_parameters(num_neurons_input,
 def create_network(num_neurons_input, 
                    num_neurons_output, 
                    num_neurons_hidden_layers=[], 
-                   output_activation="relu", 
+                   output_activation="softmax", 
                    hidden_activations="relu", 
                    parameters_validated=False):
     """
@@ -105,7 +105,7 @@ def create_network(num_neurons_input,
     num_neurons_input: Number of neurons in the input layer.
     num_neurons_output: Number of neurons in the output layer.
     num_neurons_hidden_layers=[]: A list holding the number of neurons in the hidden layer(s). If empty [], then no hidden layers are used. For each int value it holds, then a hidden layer is created with number of hidden neurons specified by the corresponding int value. For example, num_neurons_hidden_layers=[10] creates a single hidden layer with 10 neurons. num_neurons_hidden_layers=[10, 5] creates 2 hidden layers with 10 neurons for the first and 5 neurons for the second hidden layer.
-    output_activation="relu": The name of the activation function of the output layer which defaults to "relu".
+    output_activation="softmax": The name of the activation function of the output layer which defaults to "softmax".
     hidden_activations="relu": The name(s) of the activation function(s) of the hidden layer(s). It defaults to "relu". If passed as a string, this means the specified activation function will be used across all the hidden layers. If passed as a list, then it must has the same length as the length of the num_neurons_hidden_layers list. An exception is raised if there lengths are different. When hidden_activations is a list, a one-to-one mapping between the num_neurons_hidden_layers and hidden_activations lists occurs.
     parameters_validated=False: If False, then the parameters are not validated and a call to the validate_network_parameters() function is made.
 
@@ -150,7 +150,7 @@ def create_network(num_neurons_input,
 
     # Returning the reference to the last layer in the network architecture which is the output layer. Based on such reference, all network layer can be fetched.
     return output_layer
-    
+
 def population_as_vectors(population_networks):
     """
     Accepts the population as networks and returns a list holding all weights of the layers of each solution (i.e. network) in the population as a vector. 
@@ -217,7 +217,7 @@ class GANN:
                  num_neurons_input, 
                  num_neurons_output, 
                  num_neurons_hidden_layers=[], 
-                 output_activation="relu", 
+                 output_activation="softmax", 
                  hidden_activations="relu"):
         """
         Creates an instance of the GANN class for training a neural network using the genetic algorithm.
@@ -229,7 +229,7 @@ class GANN:
         num_neurons_input: Number of neurons in the input layer.
         num_neurons_output: Number of neurons in the output layer.
         num_neurons_hidden_layers=[]: A list holding the number of neurons in the hidden layer(s). If empty [], then no hidden layers are used. For each int value it holds, then a hidden layer is created with number of hidden neurons specified by the corresponding int value. For example, num_neurons_hidden_layers=[10] creates a single hidden layer with 10 neurons. num_neurons_hidden_layers=[10, 5] creates 2 hidden layers with 10 neurons for the first and 5 neurons for the second hidden layer.
-        output_activation="relu": The name of the activation function of the output layer which defaults to "relu".
+        output_activation="softmax": The name of the activation function of the output layer which defaults to "softmax".
         hidden_activations="relu": The name(s) of the activation function(s) of the hidden layer(s). It defaults to "relu". If passed as a string, this means the specified activation function will be used across all the hidden layers. If passed as a list, then it must has the same length as the length of the num_neurons_hidden_layers list. An exception is raised if there lengths are different. When hidden_activations is a list, a one-to-one mapping between the num_neurons_hidden_layers and hidden_activations lists occurs.
         """
 
