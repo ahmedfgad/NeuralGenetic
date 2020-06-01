@@ -1,12 +1,14 @@
-# PyGAD
+# NeuralGenetic: Training Neural Networks using the Genetic Algorithm
 
-[PyGAD](https://pypi.org/project/pygad) is an open-source Python 3 library for implementing the genetic algorithm and optimizing machine learning algorithms. 
+[NeuralGenetic](https://github.com/ahmedfgad/NeuralGenetic) is a Python project for training neural networks using the genetic algorithm. 
 
-[PyGAD](https://pypi.org/project/pygad) supports different types of crossover, mutation, and parent selection. [PyGAD](https://pypi.org/project/pygad) allows different types of problems to be optimized using the genetic algorithm by customizing the fitness function. 
+[NeuralGenetic](https://github.com/ahmedfgad/NeuralGenetic) is part of the [PyGAD](https://pypi.org/project/pygad) library which is an open-source Python 3 library for implementing the genetic algorithm and optimizing machine learning algorithms. 
 
-Besides building the genetic algorithm, it builds and optimizes machine learning algorithms. Currently, [PyGAD](https://pypi.org/project/pygad) supports building and training (using genetic algorithm) artificial neural networks for classification problems. 
+Check documentation of the [NeuralGenetic](https://github.com/ahmedfgad/NeuralGenetic) project in the PyGAD's documentation: https://pygad.readthedocs.io/en/latest/README_pygad_gann_ReadTheDocs.html
 
 The library is under active development and more features in the genetic algorithm will be added like working with binary problems. This is in addition to supporting more machine learning algorithms.
+
+Before using the [NeuralGenetic](https://github.com/ahmedfgad/NeuralGenetic) project, install PyGAD.
 
 # Tutorial Project
 
