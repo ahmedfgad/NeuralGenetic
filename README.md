@@ -10,6 +10,12 @@ The library is under active development and more features in the genetic algorit
 
 Before using the [NeuralGenetic](https://github.com/ahmedfgad/NeuralGenetic) project, install PyGAD.
 
+# Donation
+
+You can donate via [Open Collective](https://opencollective.com/pygad): [opencollective.com/pygad](https://opencollective.com/pygad). 
+
+To donate using PayPal, use either this link: [paypal.me/ahmedfgad](https://paypal.me/ahmedfgad) or the e-mail address ahmed.f.gad@gmail.com.
+
 # Tutorial Project
 
 **IMPORTANT** If you are coming for the code of the tutorial titled [**Artificial Neural Networks Optimization using Genetic Algorithm with Python**](https://www.linkedin.com/pulse/artificial-neural-networks-optimization-using-genetic-ahmed-gad), then it has been moved to the [Tutorial Project](https://github.com/ahmedfgad/NeuralGenetic/tree/master/Tutorial Project) directory on 15 May 2020.
