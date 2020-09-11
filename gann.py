@@ -42,12 +42,12 @@ def validate_network_parameters(num_neurons_input,
     
     # Frequently used error messages.
     unexpected_output_activation_value = "Output activation function: The activation function of the output layer is passed as a string not {activation_type}."
-    unexpected_activation_value = "Activation function: The supported activation functions are {supported_activations} but an unexpected value is found:\n{activations}"
+    unexpected_activation_value = "Activation function: The supported values for the activation function are {supported_activations} but an unexpected value is found:\n{activations}"
     unexpected_activation_type = "Activation Function: A list, tuple, or a string is expected but {activations_type} found."
     length_mismatch = "Hidden activation functions: When passing the activation function(s) as a list or a tuple, its length must match the length of the 'num_neurons_hidden_layers' parameter but a mismatch is found:\n{mismatched_lengths}"
 
     # A list of the names of the supported activation functions.
-    supported_activations = ["sigmoid", "relu", "softmax"]
+    supported_activations = ["sigmoid", "relu", "softmax", "None"]
 
     # Validating the output layer activation function.
     if not (type(output_activation) is str):
