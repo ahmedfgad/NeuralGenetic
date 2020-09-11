@@ -2,11 +2,11 @@
 
 [NeuralGenetic](https://github.com/ahmedfgad/NeuralGenetic) is a Python project for training neural networks using the genetic algorithm. 
 
-[NeuralGenetic](https://github.com/ahmedfgad/NeuralGenetic) is part of the [PyGAD](https://pypi.org/project/pygad) library which is an open-source Python 3 library for implementing the genetic algorithm and optimizing machine learning algorithms. 
+[NeuralGenetic](https://github.com/ahmedfgad/NeuralGenetic) is part of the [PyGAD](https://pypi.org/project/pygad) library which is an open-source Python 3 library for implementing the genetic algorithm and optimizing machine learning algorithms. Both regression and classification neural networks are supported starting from PyGAD 2.7.0.
 
 Check documentation of the [NeuralGenetic](https://github.com/ahmedfgad/NeuralGenetic) project in the PyGAD's documentation: https://pygad.readthedocs.io/en/latest/README_pygad_gann_ReadTheDocs.html
 
-The library is under active development and more features in the genetic algorithm will be added like working with binary problems. This is in addition to supporting more machine learning algorithms.
+The library is under active development and more features are added regularly. If you want a feature to be supported, please check the **Contact Us** section to send a request.
 
 Before using the [NeuralGenetic](https://github.com/ahmedfgad/NeuralGenetic) project, install PyGAD.
 
