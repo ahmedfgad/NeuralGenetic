@@ -45,7 +45,7 @@ num_solutions = 6 # A solution or a network can be used interchangeably.
 GANN_instance = pygad.gann.GANN(num_solutions=num_solutions,
                                 num_neurons_input=num_inputs,
                                 num_neurons_hidden_layers=[2],
-                                num_neurons_output=1,
+                                num_neurons_output=2,
                                 hidden_activations=["relu"],
                                 output_activation="None")
 
