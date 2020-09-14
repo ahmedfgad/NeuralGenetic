@@ -34,8 +34,8 @@ data_inputs = numpy.array([[2, 5, -3, 0.1],
                            [8, 15, 20, 13]])
 
 # Preparing the NumPy array of the outputs.
-data_outputs = numpy.array([0.1, 
-                            1.5])
+data_outputs = numpy.array([[0.1, 0.2],
+                            [1.8, 1.5]])
 
 # The length of the input vector for each sample (i.e. number of neurons in the input layer).
 num_inputs = data_inputs.shape[1]
