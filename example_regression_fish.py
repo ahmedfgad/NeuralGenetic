@@ -87,7 +87,7 @@ ga_instance = pygad.GA(num_generations=num_generations,
                        crossover_type=crossover_type,
                        mutation_type=mutation_type,
                        keep_parents=keep_parents,
-                       callback_generation=callback_generation)
+                       on_generation=callback_generation)
 
 ga_instance.run()
 
