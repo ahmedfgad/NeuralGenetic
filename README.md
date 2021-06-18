@@ -24,14 +24,6 @@ To donate using PayPal, use either this link: [paypal.me/ahmedfgad](https://payp
 
 To install [PyGAD](https://pypi.org/project/pygad), simply use pip to download and install the library from [PyPI](https://pypi.org/project/pygad) (Python Package Index). The library lives a PyPI at this page https://pypi.org/project/pygad.
 
-For Windows, issue the following command:
-
-```python
-pip install pygad
-```
-
-For Linux and Mac, replace `pip` by use `pip3` because the library only supports Python 3.
-
 ```python
 pip3 install pygad
 ```
