@@ -4,7 +4,7 @@
 
 [NeuralGenetic](https://github.com/ahmedfgad/NeuralGenetic) is part of the [PyGAD](https://pypi.org/project/pygad) library which is an open-source Python 3 library for implementing the genetic algorithm and optimizing machine learning algorithms. Both regression and classification neural networks are supported starting from PyGAD 2.7.0.
 
-Check documentation of the [NeuralGenetic](https://github.com/ahmedfgad/NeuralGenetic) project in the PyGAD's documentation: https://pygad.readthedocs.io/en/latest/README_pygad_gann_ReadTheDocs.html
+Check documentation of the [NeuralGenetic](https://github.com/ahmedfgad/NeuralGenetic) project in the PyGAD's documentation: https://pygad.readthedocs.io/en/latest/gann.html
 
 The library is under active development and more features are added regularly. If you want a feature to be supported, please check the **Contact Us** section to send a request.
 
@@ -146,7 +146,7 @@ on_stop()
 
 # Example
 
-Check the [PyGAD's documentation](https://pygad.readthedocs.io/en/latest/README_pygad_gann_ReadTheDocs.html) for information about the implementation of this example.
+Check the [PyGAD's documentation](https://pygad.readthedocs.io/en/latest/gann.html) for information about the implementation of this example.
 
 ```python
 import numpy
