@@ -3,7 +3,7 @@ import pygad
 import pygad.nn
 import pygad.gann
 
-def fitness_func(solution, sol_idx):
+def fitness_func(ga_instance, solution, sol_idx):
     global GANN_instance, data_inputs, data_outputs
 
     predictions = pygad.nn.predict(last_layer=GANN_instance.population_networks[sol_idx],
