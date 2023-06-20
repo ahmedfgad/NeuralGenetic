@@ -21,10 +21,10 @@ def callback_generation(ga_instance):
     GANN_instance.update_population_trained_weights(population_trained_weights=population_matrices)
 
     print("Generation = {generation}".format(generation=ga_instance.generations_completed))
-    print("Fitness    = {fitness}".format(fitness=ga_instance.best_solution()[1]))
-    print("Change     = {change}".format(change=ga_instance.best_solution()[1] - last_fitness))
+    print("Fitness    = {fitness}".format(fitness=ga_instance.best_solution(pop_fitness=ga_instance.last_generation_fitness)[1]))
+    print("Change     = {change}".format(change=ga_instance.best_solution(pop_fitness=ga_instance.last_generation_fitness)[1] - last_fitness))
 
-    last_fitness = ga_instance.best_solution()[1].copy()
+    last_fitness = ga_instance.best_solution(pop_fitness=ga_instance.last_generation_fitness)[1].copy()
 
 # Holds the fitness value of the previous generation.
 last_fitness = 0
@@ -94,7 +94,7 @@ ga_instance.run()
 ga_instance.plot_fitness()
 
 # Returning the details of the best solution.
-solution, solution_fitness, solution_idx = ga_instance.best_solution()
+solution, solution_fitness, solution_idx = ga_instance.best_solution(pop_fitness=ga_instance.last_generation_fitness)
 print("Parameters of the best solution : {solution}".format(solution=solution))
 print("Fitness value of the best solution = {solution_fitness}".format(solution_fitness=solution_fitness))
 print("Index of the best solution : {solution_idx}".format(solution_idx=solution_idx))
