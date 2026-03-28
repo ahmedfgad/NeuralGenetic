@@ -10,7 +10,7 @@ def mat_to_vector(mat_pop_weights):
             vector_weights = numpy.reshape(mat_pop_weights[sol_idx, layer_idx], newshape=(mat_pop_weights[sol_idx, layer_idx].size))
             curr_vector.extend(vector_weights)
         pop_weights_vector.append(curr_vector)
-    return numpy.array(pop_weights_vector)
+    return numpy.asarray(pop_weights_vector)
 
 # Converting each solution from vector to matrix.
 def vector_to_mat(vector_pop_weights, mat_pop_weights):
